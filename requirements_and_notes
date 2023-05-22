@@ -1,0 +1,46 @@
+Requirements of the ATM
++ Functional requirement 1 ->not sure about ‘k’.
++ Functional requirement 2
++ Functional requirement 3
++ Functional requirement 4 -> checking if the card can be read done manually. Sensors needed. Expiration date of cards not implemented. Can be done in the same way with cardNumber.
++ Functional requirement 5 -> reading serial number done manually. Sensors needed. Bank code of cards not implemented. Can be done in the same way with cardNumber.
++ Functional requirement 6
++ Functional requirement 7
++ Functional requirement 8 “bad account” ->how does this error occur? “Bad bank code” ->not possible because there is only one bank in this project.
++ Functional requirement 9
++ Functional requirement 10
++ Functional requirement 11
++ Functional requirement 12
++ Functional requirement 13
++ Functional requirement 14
++ Functional requirement 15
++ Functional requirement 16
++ Functional requirement 17
+
+Requirements of Bank
++ Functional requirement 1 -> checks only if the card registered to this Bank.
++ Functional requirement 2
++ Functional requirement 3
++ Functional requirement 4
+- Functional requirement 5 -> what else could go wrong? (“Bad account”)
++ Functional requirement 6
++ Functional requirement 7
++ Functional requirement 8
+- Functional requirement 9 -> is this for withdrawal or spendings? If its for spendings, shouldn’t it be on the “Card“ class.
++ Functional requirement 10
+
+Performance Requirements
++ Functional requirement 1 -> error message will be displayed 5 seconds. To make it useful
+- Functional requirement 2 -> networking part is missing. As a result, Bank always responds.
++ Functional requirement 3
+- Functional requirement 4 -> designed only for multiple atm’s but for only one bank.
+
+
+Testing Details:
+ATM, CardReader, CashDispenser, Display classes have missing tests due to the problem:
+When trying to test a method that contains Scanner object with next(), nextInt() etc test either gets stuck waiting for input or I try to mock Scanner object and get an error (Scanner is final. Cannot spy or mock).
+I tried dependency injection(?) by seeing it on stackoverflow but still didn't work.
+
+ 
+
+
